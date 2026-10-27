@@ -1,0 +1,129 @@
+/* ReadyUpnRoll hub site — one shared stylesheet */
+:root {
+  --bg: #fafaf8;
+  --surface: #ffffff;
+  --text: #1c1c1e;
+  --muted: #6b6b70;
+  --line: #e6e5e1;
+  --accent: #3b5bdb;
+  --accent-text: #ffffff;
+  --accent-soft: #edf1ff;
+  --radius: 16px;
+  --shadow: 0 1px 2px rgba(0,0,0,.04), 0 8px 24px rgba(0,0,0,.05);
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #141416;
+    --surface: #1d1d20;
+    --text: #f2f2f0;
+    --muted: #a0a0a6;
+    --line: #2e2e33;
+    --accent: #7c95ff;
+    --accent-text: #0f1220;
+    --accent-soft: #1f2440;
+    --shadow: none;
+  }
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--accent); }
+
+.wrap { max-width: 720px; margin: 0 auto; padding: 0 20px; }
+
+/* header */
+.top { padding: 28px 0; }
+.brand { font-weight: 700; letter-spacing: -.01em; text-decoration: none; color: var(--text); font-size: 1.05rem; }
+.brand span { color: var(--accent); }
+
+/* hero */
+.hero { padding: 72px 0 40px; text-align: center; }
+.hero h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 14px; }
+.hero p { color: var(--muted); font-size: 1.1rem; margin: 0; }
+
+/* cards */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 28px;
+}
+.join {
+  text-align: center;
+  background: var(--accent-soft);
+  border-color: transparent;
+  padding: 36px 28px;
+}
+.join .emoji { font-size: 2.4rem; line-height: 1; }
+.join h2 { font-size: clamp(1.35rem, 4.5vw, 1.8rem); letter-spacing: -.02em; margin: 12px 0 6px; }
+.join p { color: var(--muted); margin: 0; }
+
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; }
+@media (max-width: 560px) { .choices { grid-template-columns: 1fr; } }
+.choice {
+  display: block; text-decoration: none; color: var(--text);
+  transition: transform .15s ease, border-color .15s ease;
+}
+.choice:hover { transform: translateY(-2px); border-color: var(--accent); }
+.choice .emoji { font-size: 1.8rem; }
+.choice h3 { margin: 10px 0 4px; font-size: 1.2rem; }
+.choice p { margin: 0; color: var(--muted); font-size: .95rem; }
+
+/* buttons */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+  background: var(--accent); color: var(--accent-text);
+  font-weight: 700; font-size: 1.15rem; text-decoration: none;
+  padding: 18px 32px; border-radius: 999px;
+  transition: transform .15s ease, filter .15s ease;
+}
+.btn:hover { transform: translateY(-1px); filter: brightness(1.08); }
+.btn-note { color: var(--muted); font-size: .9rem; margin-top: 10px; }
+
+/* steps */
+.steps { list-style: none; padding: 0; margin: 0; counter-reset: step; display: grid; gap: 14px; }
+.steps li { counter-increment: step; display: grid; grid-template-columns: 44px 1fr; gap: 16px; align-items: start; }
+.steps li::before {
+  content: counter(step);
+  width: 44px; height: 44px; border-radius: 50%;
+  background: var(--accent-soft); color: var(--accent);
+  display: grid; place-items: center; font-weight: 800; font-size: 1.15rem;
+}
+.steps h3 { margin: 8px 0 2px; font-size: 1.08rem; }
+.steps p { margin: 0; color: var(--muted); }
+.tip {
+  margin-top: 8px; padding: 10px 14px; border-radius: 10px;
+  background: var(--bg); border: 1px dashed var(--line); color: var(--text); font-size: .93rem;
+}
+kbd {
+  font-family: inherit; font-size: .88em; font-weight: 600;
+  background: var(--bg); border: 1px solid var(--line); border-bottom-width: 2px;
+  border-radius: 6px; padding: 1px 7px;
+}
+
+/* sections */
+section { margin: 40px 0; }
+section > h2 { font-size: 1.4rem; letter-spacing: -.02em; margin: 0 0 16px; }
+.center { text-align: center; }
+.faq dt { font-weight: 700; margin-top: 16px; }
+.faq dd { margin: 4px 0 0; color: var(--muted); }
+
+/* under construction */
+.construction { text-align: center; padding: 96px 0 40px; }
+.construction .emoji { font-size: 4rem; }
+.construction h1 { font-size: clamp(2rem, 6vw, 2.8rem); letter-spacing: -.03em; margin: 16px 0 8px; }
+.construction p { color: var(--muted); font-size: 1.1rem; margin: 0 0 32px; }
+.construction .maybe { font-style: italic; }
+
+.back { display: inline-block; margin-top: 8px; text-decoration: none; font-weight: 600; }
+
+/* footer */
+footer { padding: 48px 0 40px; color: var(--muted); font-size: .85rem; text-align: center; }
