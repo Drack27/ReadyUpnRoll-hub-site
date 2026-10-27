@@ -1,0 +1,9 @@
+// Tells Cloudflare how to publish this site: no code, just serve the files in this folder.
+{
+  "name": "readyupnroll-hub-site",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./",
+    "not_found_handling": "404-page"
+  }
+}
