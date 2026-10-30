@@ -5,5 +5,7 @@
   "assets": {
     "directory": "./",
     "not_found_handling": "404-page"
-  }
+  },
+  // Lets Cloudflare build a preview copy of the site for each pull request.
+  "previews": {}
 }
