@@ -5,9 +5,10 @@ Plain HTML and CSS. No build step, nothing to install.
 
 | File | Page |
 |---|---|
-| `index.html` | Home: "ask your host for an invite link", Host and Schedule buttons |
+| `index.html` | Home: welcome line, "ask your host for an invite link", Host and Schedule buttons, "What's a WhiteSpace?" card |
 | `host.html` | Download button + step-by-step hosting instructions |
 | `schedule.html` | Under construction |
+| `credits.html` | Credits: people, tools, AIs, and every package Project WhiteSpace uses |
 | `404.html` | Shown for any address that doesn't exist |
 | `style.css` | Look and feel for every page (colors are at the top) |
 

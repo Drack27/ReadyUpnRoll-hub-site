@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Credits · Ready Up n Roll</title>
+  <meta name="description" content="The people, tools, code and AIs that Ready Up n Roll and Project WhiteSpace are built on.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="wrap top">
+    <a class="brand" href="index.html">Ready Up <span>n</span> Roll</a>
+  </header>
+
+  <main class="wrap">
+    <div class="hero">
+      <h1>Credits</h1>
+      <p>Standing on the shoulders of giants. Here are as many of them as I could find.</p>
+    </div>
+
+    <section>
+      <h2>People</h2>
+      <div class="card">
+        <ul class="credits">
+          <li><strong>Drack</strong>, Brain Vacation Studios: the ideas, the design, the testing, the "no, not like that", and this site.</li>
+          <li><strong>Everyone who made the things on this page.</strong> Every project below is the work of real people, most of them volunteers, who gave it away for free.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>AI</h2>
+      <div class="card">
+        <ul class="credits">
+          <li><a href="https://www.anthropic.com/claude"><strong>Claude</strong></a>, made by <a href="https://www.anthropic.com">Anthropic</a>: wrote most of the code for Project WhiteSpace and this site alongside Drack, working through <a href="https://claude.com/claude-code">Claude Code</a>. (Hi! That's me. Thanks for having me.)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Project WhiteSpace</h2>
+      <div class="card">
+        <h3 class="credits-h">The game in your browser</h3>
+        <ul class="credits">
+          <li><a href="https://www.babylonjs.com">Babylon.js</a>: the 3D engine that draws the whole world</li>
+          <li><a href="https://www.havok.com">Havok Physics</a> (<a href="https://www.npmjs.com/package/@babylonjs/havok">@babylonjs/havok</a>): collisions, jumping, falling over, and things that tumble</li>
+          <li><a href="https://colyseus.io">Colyseus</a> client (<a href="https://www.npmjs.com/package/@colyseus/sdk">@colyseus/sdk</a>): keeps everyone's browser in sync with the host</li>
+          <li><a href="https://github.com/soldair/node-qrcode">node-qrcode</a>: the invite QR codes</li>
+        </ul>
+
+        <h3 class="credits-h">The host's computer</h3>
+        <ul class="credits">
+          <li><a href="https://nodejs.org">Node.js</a>: runs the server, including its zlib (by Jean-loup Gailly &amp; Mark Adler), worker threads, and single executable applications (how the .exe is made)</li>
+          <li><a href="https://colyseus.io">Colyseus</a>, by Endel Dreyer and contributors (<a href="https://www.npmjs.com/package/colyseus">colyseus</a>, <a href="https://www.npmjs.com/package/@colyseus/schema">@colyseus/schema</a>, <a href="https://www.npmjs.com/package/@colyseus/ws-transport">@colyseus/ws-transport</a>): the multiplayer server</li>
+          <li><a href="https://expressjs.com">Express</a>: serves the game and the uploads</li>
+          <li><a href="https://github.com/websockets/ws">ws</a> and <a href="https://github.com/kriszyp/msgpackr">msgpackr</a>: the live connections and the compact messages sent over them</li>
+          <li><a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/">cloudflared</a> and Cloudflare's free Quick Tunnels: the invite link that works without router setup</li>
+          <li>Microsoft's <a href="https://learn.microsoft.com/dotnet/framework/">.NET Framework</a>, C# compiler and Windows Forms: the host's status window</li>
+          <li><a href="https://www.microsoft.com/windows">Windows</a>: what the host app runs on</li>
+        </ul>
+
+        <h3 class="credits-h">Building it</h3>
+        <ul class="credits">
+          <li><a href="https://vite.dev">Vite</a>, with <a href="https://rolldown.rs">Rolldown</a>, <a href="https://oxc.rs">Oxc</a>, <a href="https://lightningcss.dev">Lightning CSS</a> and <a href="https://postcss.org">PostCSS</a>: packs the browser game together</li>
+          <li><a href="https://esbuild.github.io">esbuild</a>, by Evan Wallace: squeezes the server into one file</li>
+          <li><a href="https://github.com/nodejs/postject">postject</a>: tucks it all inside the .exe</li>
+          <li><a href="https://www.npmjs.com">npm</a>: fetches every package listed at the bottom of this page</li>
+          <li><a href="https://git-scm.com">Git</a>, <a href="https://github.com">GitHub</a>, <a href="https://github.com/features/actions">GitHub Actions</a> (checkout, setup-node, upload-artifact), GitHub Releases and the <a href="https://cli.github.com">GitHub CLI</a>: keep the code, build and test the .exe, and publish the downloads</li>
+          <li><a href="https://playwright.dev">Playwright</a> and <a href="https://www.chromium.org">Chromium</a>: the automated tests that play the game in a real browser</li>
+          <li><a href="https://www.python.org">Python</a> and Bash: little helper scripts along the way (including the one that wrote the package list on this page)</li>
+        </ul>
+
+        <h3 class="credits-h">The web, and the formats it reads</h3>
+        <ul class="credits">
+          <li>WebGL, WebAssembly, WebSockets, the Web Audio API (and AudioWorklet), WebCodecs and microphone access: the browser features that make 3D, physics and voice possible, and the people at the <a href="https://www.w3.org">W3C</a>, <a href="https://whatwg.org">WHATWG</a> and <a href="https://www.khronos.org">Khronos Group</a> who wrote them down</li>
+          <li><a href="https://opus-codec.org">Opus</a>, from Xiph.Org and the IETF: the voice chat codec</li>
+          <li>Chrome, Edge, Firefox and Safari: the browsers it plays in</li>
+          <li><a href="https://www.khronos.org/gltf/">glTF / GLB</a> (Khronos Group), Wavefront OBJ, and STL (3D Systems): the 3D model formats</li>
+          <li>PNG, JPEG, GIF (CompuServe) and WebP (Google): the picture formats, which WhiteSpace reads and writes with its own code, thanks to their published specs and DEFLATE (Phil Katz)</li>
+        </ul>
+
+        <h3 class="credits-h">Inspiration</h3>
+        <ul class="credits">
+          <li><em>The Legend of Zelda: Ocarina of Time</em> (Nintendo): the idea for Focus (F) comes from its targeting camera</li>
+          <li>Every tabletop RPG group that ever played over the internet and wished it felt more like sitting at the same table</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>This site</h2>
+      <div class="card">
+        <ul class="credits">
+          <li>Plain HTML and CSS, nothing else</li>
+          <li><a href="https://www.cloudflare.com">Cloudflare</a> (Workers static assets and DNS): hosts it for free and forwards readyupandroll.com here</li>
+          <li><a href="https://rsms.me/inter/">Inter</a>, by Rasmus Andersson: the font, if your device has it (otherwise your system's own)</li>
+          <li>Your device's emoji (🎲 🔗 📅), drawn by its makers from the <a href="https://unicode.org/emoji/">Unicode</a> standard</li>
+          <li>GitHub: keeps this site's code</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>Every package Project WhiteSpace uses</h2>
+      <p class="credits-note">All 235 of them, including the ones the packages above rely on, and builds for systems you may never use. Each one links to its page, with its license beside it.</p>
+      <div class="card">
+        <ul class="credits packages">
+          <li><a href="https://www.npmjs.com/package/@babylonjs/core">@babylonjs/core</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/@babylonjs/havok">@babylonjs/havok</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@better-auth/utils">@better-auth/utils</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@better-fetch/fetch">@better-fetch/fetch</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/auth">@colyseus/auth</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/better-call">@colyseus/better-call</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/clock">@colyseus/clock</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/core">@colyseus/core</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/greeting-banner">@colyseus/greeting-banner</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/monitor">@colyseus/monitor</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/playground">@colyseus/playground</a></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/redis-driver">@colyseus/redis-driver</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/redis-presence">@colyseus/redis-presence</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/schema">@colyseus/schema</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/sdk">@colyseus/sdk</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/shared-types">@colyseus/shared-types</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/timer">@colyseus/timer</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/tools">@colyseus/tools</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/uwebsockets-transport">@colyseus/uwebsockets-transport</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@colyseus/ws-transport">@colyseus/ws-transport</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@ioredis/commands">@ioredis/commands</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-darwin-arm64">@msgpackr-extract/msgpackr-extract-darwin-arm64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-darwin-x64">@msgpackr-extract/msgpackr-extract-darwin-x64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-linux-arm">@msgpackr-extract/msgpackr-extract-linux-arm</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-linux-arm64">@msgpackr-extract/msgpackr-extract-linux-arm64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-linux-x64">@msgpackr-extract/msgpackr-extract-linux-x64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@msgpackr-extract/msgpackr-extract-win32-x64">@msgpackr-extract/msgpackr-extract-win32-x64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@oxc-project/types">@oxc-project/types</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@pm2/io">@pm2/io</a> <span class="lic">Apache-2</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-android-arm-eabi">@rolldown/binding-android-arm-eabi</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-android-arm64">@rolldown/binding-android-arm64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-darwin-arm64">@rolldown/binding-darwin-arm64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-darwin-x64">@rolldown/binding-darwin-x64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-freebsd-x64">@rolldown/binding-freebsd-x64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-arm-gnueabihf">@rolldown/binding-linux-arm-gnueabihf</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-arm64-gnu">@rolldown/binding-linux-arm64-gnu</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-arm64-musl">@rolldown/binding-linux-arm64-musl</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-ppc64-gnu">@rolldown/binding-linux-ppc64-gnu</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-s390x-gnu">@rolldown/binding-linux-s390x-gnu</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-x64-gnu">@rolldown/binding-linux-x64-gnu</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-linux-x64-musl">@rolldown/binding-linux-x64-musl</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-openharmony-arm64">@rolldown/binding-openharmony-arm64</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-win32-arm64-msvc">@rolldown/binding-win32-arm64-msvc</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/binding-win32-x64-msvc">@rolldown/binding-win32-x64-msvc</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@rolldown/pluginutils">@rolldown/pluginutils</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@standard-schema/spec">@standard-schema/spec</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@types/emscripten">@types/emscripten</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@types/jsonwebtoken">@types/jsonwebtoken</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@types/ms">@types/ms</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@types/node">@types/node</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/@types/ws">@types/ws</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/accepts">accepts</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/ansi-regex">ansi-regex</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/ansi-styles">ansi-styles</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/asn1.js">asn1.js</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/async">async</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/bn.js">bn.js</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/body-parser">body-parser</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/brorand">brorand</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/buffer-equal-constant-time">buffer-equal-constant-time</a> <span class="lic">BSD-3-Clause</span></li>
+          <li><a href="https://www.npmjs.com/package/bytes">bytes</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/call-bind-apply-helpers">call-bind-apply-helpers</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/call-bound">call-bound</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/camelcase">camelcase</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/cliui">cliui</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/cluster-key-slot">cluster-key-slot</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/color-convert">color-convert</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/color-name">color-name</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/colyseus">colyseus</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/connect-redis">connect-redis</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/content-disposition">content-disposition</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/content-type">content-type</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/cookie">cookie</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/cookie-signature">cookie-signature</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/debug">debug</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/decamelize">decamelize</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/denque">denque</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/depd">depd</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/detect-libc">detect-libc</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/dijkstrajs">dijkstrajs</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/dotenv">dotenv</a> <span class="lic">BSD-2-Clause</span></li>
+          <li><a href="https://www.npmjs.com/package/dunder-proto">dunder-proto</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/ecdsa-sig-formatter">ecdsa-sig-formatter</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/ee-first">ee-first</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/elliptic">elliptic</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/emoji-regex">emoji-regex</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/encodeurl">encodeurl</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/es-define-property">es-define-property</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/es-errors">es-errors</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/es-object-atoms">es-object-atoms</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/escape-html">escape-html</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/etag">etag</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/eventemitter2">eventemitter2</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/express">express</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/express-jwt">express-jwt</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/express-session">express-session</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/express-unless">express-unless</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/fdir">fdir</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/finalhandler">finalhandler</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/find-up">find-up</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/forwarded">forwarded</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/fresh">fresh</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/fsevents">fsevents</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/function-bind">function-bind</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/get-caller-file">get-caller-file</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/get-intrinsic">get-intrinsic</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/get-proto">get-proto</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/gopd">gopd</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/grant">grant</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/has-symbols">has-symbols</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/hash.js">hash.js</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/hasown">hasown</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/hmac-drbg">hmac-drbg</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/http-errors">http-errors</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/iconv-lite">iconv-lite</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/inherits">inherits</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/ioredis">ioredis</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/ipaddr.js">ipaddr.js</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/is-core-module">is-core-module</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/is-fullwidth-code-point">is-fullwidth-code-point</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/is-promise">is-promise</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/jsonwebtoken">jsonwebtoken</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/jwa">jwa</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/jwk-to-pem">jwk-to-pem</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/jws">jws</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss">lightningcss</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-android-arm64">lightningcss-android-arm64</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-darwin-arm64">lightningcss-darwin-arm64</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-darwin-x64">lightningcss-darwin-x64</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-freebsd-x64">lightningcss-freebsd-x64</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-linux-arm-gnueabihf">lightningcss-linux-arm-gnueabihf</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-linux-arm64-gnu">lightningcss-linux-arm64-gnu</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-linux-arm64-musl">lightningcss-linux-arm64-musl</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-linux-x64-gnu">lightningcss-linux-x64-gnu</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-linux-x64-musl">lightningcss-linux-x64-musl</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-win32-arm64-msvc">lightningcss-win32-arm64-msvc</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/lightningcss-win32-x64-msvc">lightningcss-win32-x64-msvc</a> <span class="lic">MPL-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/locate-path">locate-path</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash">lodash</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.includes">lodash.includes</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.isboolean">lodash.isboolean</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.isinteger">lodash.isinteger</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.isnumber">lodash.isnumber</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.isplainobject">lodash.isplainobject</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.isstring">lodash.isstring</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lodash.once">lodash.once</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/lru-cache">lru-cache</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/math-intrinsics">math-intrinsics</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/media-typer">media-typer</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/merge-descriptors">merge-descriptors</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/mime-db">mime-db</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/mime-types">mime-types</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/minimalistic-assert">minimalistic-assert</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/minimalistic-crypto-utils">minimalistic-crypto-utils</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/module-details-from-path">module-details-from-path</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/ms">ms</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/msgpackr">msgpackr</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/msgpackr-extract">msgpackr-extract</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/nanoid">nanoid</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/negotiator">negotiator</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/node-gyp-build-optional-packages">node-gyp-build-optional-packages</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/node-os-utils">node-os-utils</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/oauth-sign">oauth-sign</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/object-inspect">object-inspect</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/on-finished">on-finished</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/on-headers">on-headers</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/once">once</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/p-limit">p-limit</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/p-locate">p-locate</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/p-try">p-try</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/parseurl">parseurl</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/path-exists">path-exists</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/path-parse">path-parse</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/path-to-regexp">path-to-regexp</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/picocolors">picocolors</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/picomatch">picomatch</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/pngjs">pngjs</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/postcss">postcss</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/proxy-addr">proxy-addr</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/qrcode">qrcode</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/qs">qs</a> <span class="lic">BSD-3-Clause</span></li>
+          <li><a href="https://www.npmjs.com/package/random-bytes">random-bytes</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/range-parser">range-parser</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/raw-body">raw-body</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/redis-errors">redis-errors</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/redis-parser">redis-parser</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/request-compose">request-compose</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/request-oauth">request-oauth</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/require-directory">require-directory</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/require-in-the-middle">require-in-the-middle</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/require-main-filename">require-main-filename</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/resolve">resolve</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/rolldown">rolldown</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/rou3">rou3</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/router">router</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/safe-buffer">safe-buffer</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/safer-buffer">safer-buffer</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/semver">semver</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/send">send</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/serve-static">serve-static</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/set-blocking">set-blocking</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/set-cookie-parser">set-cookie-parser</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/setprototypeof">setprototypeof</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/shimmer">shimmer</a> <span class="lic">BSD-2-Clause</span></li>
+          <li><a href="https://www.npmjs.com/package/side-channel">side-channel</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/side-channel-list">side-channel-list</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/side-channel-map">side-channel-map</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/side-channel-weakmap">side-channel-weakmap</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/signal-exit">signal-exit</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/source-map-js">source-map-js</a> <span class="lic">BSD-3-Clause</span></li>
+          <li><a href="https://www.npmjs.com/package/standard-as-callback">standard-as-callback</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/statuses">statuses</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/string-width">string-width</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/strip-ansi">strip-ansi</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/supports-preserve-symlinks-flag">supports-preserve-symlinks-flag</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/tinyglobby">tinyglobby</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/toidentifier">toidentifier</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/tslib">tslib</a> <span class="lic">0BSD</span></li>
+          <li><a href="https://www.npmjs.com/package/type-is">type-is</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/uid-safe">uid-safe</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/undici-types">undici-types</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/unpipe">unpipe</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/uuid">uuid</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/uWebSockets.js">uWebSockets.js</a> <span class="lic">Apache-2.0</span></li>
+          <li><a href="https://www.npmjs.com/package/vary">vary</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/vite">vite</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/which-module">which-module</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/wrap-ansi">wrap-ansi</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/wrappy">wrappy</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/ws">ws</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/y18n">y18n</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/yallist">yallist</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/yargs">yargs</a> <span class="lic">MIT</span></li>
+          <li><a href="https://www.npmjs.com/package/yargs-parser">yargs-parser</a> <span class="lic">ISC</span></li>
+          <li><a href="https://www.npmjs.com/package/zod">zod</a> <span class="lic">MIT</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="center"><a class="back" href="index.html">← Back home</a></div>
+  </main>
+
+  <footer class="wrap">Thank you, all of you.</footer>
+</body>
+</html>
