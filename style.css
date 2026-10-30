@@ -43,6 +43,10 @@ a { color: var(--accent); }
 .brand { font-weight: 700; letter-spacing: -.01em; text-decoration: none; color: var(--text); font-size: 1.05rem; }
 .brand span { color: var(--accent); }
 
+/* home page welcome line (in place of the brand) */
+.welcome { text-align: center; }
+.welcome p { margin: 0 auto; max-width: 34em; color: var(--muted); font-size: .98rem; font-style: italic; }
+
 /* hero */
 .hero { padding: 72px 0 40px; text-align: center; }
 .hero h1 { font-size: clamp(2.2rem, 7vw, 3.4rem); line-height: 1.05; letter-spacing: -.03em; margin: 0 0 14px; }
@@ -127,3 +131,53 @@ section > h2 { font-size: 1.4rem; letter-spacing: -.02em; margin: 0 0 16px; }
 
 /* footer */
 footer { padding: 48px 0 40px; color: var(--muted); font-size: .85rem; text-align: center; }
+.credits-line { padding-top: 80px; max-width: 600px; }
+
+/* "What's a WhiteSpace?" — beside the page when there's room, a corner card when there isn't */
+.whatis {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgba(0,0,0,.06), 0 12px 32px rgba(0,0,0,.12);
+  padding: 16px 18px;
+  position: fixed; right: 16px; bottom: 16px; z-index: 10;
+  width: 300px; max-width: calc(100vw - 32px);
+}
+.whatis h2 { font-size: 1.05rem; letter-spacing: -.01em; margin: 0; }
+.whatis p { margin: 10px 0 0; color: var(--muted); font-size: .95rem; }
+.whatis button {
+  font: inherit; font-weight: 600; cursor: pointer;
+  border: 0; border-radius: 999px; padding: 8px 16px; margin-top: 10px;
+}
+.whatis-toggle { background: var(--accent); color: var(--accent-text); }
+.whatis-close { background: var(--accent-soft); color: var(--accent); }
+.whatis-body { display: none; }
+.whatis.open .whatis-body { display: block; }
+.whatis.open .whatis-toggle { display: none; }
+.whatis .say-tap { display: none; }
+@media (hover: none) and (pointer: coarse) {
+  .whatis .say-click { display: none; }
+  .whatis .say-tap { display: inline; }
+}
+/* keep the corner card from hiding the end of the page */
+body.has-whatis { padding-bottom: 120px; }
+
+@media (min-width: 1360px) {
+  body.has-whatis { position: relative; padding-bottom: 0; }
+  .whatis {
+    position: absolute; right: auto; bottom: auto;
+    top: 140px; left: calc(50% + 360px + 32px);
+    width: 280px; box-shadow: var(--shadow);
+  }
+  .whatis-toggle, .whatis-close { display: none; }
+  .whatis .whatis-body { display: block; }
+}
+
+/* credits */
+.credits { margin: 0; padding-left: 1.2em; display: grid; gap: 8px; }
+.credits-h { font-size: 1.05rem; margin: 22px 0 8px; }
+.credits-h:first-child { margin-top: 0; }
+.credits-note { color: var(--muted); margin: -6px 0 16px; }
+.packages { columns: 2 220px; column-gap: 24px; display: block; font-size: .9rem; }
+.packages li { break-inside: avoid; margin-bottom: 4px; }
+.lic { color: var(--muted); font-size: .85em; }

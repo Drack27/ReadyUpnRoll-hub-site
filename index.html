@@ -8,9 +8,9 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="wrap top">
-    <a class="brand" href="index.html">Ready Up <span>n</span> Roll</a>
+<body class="has-whatis">
+  <header class="wrap top welcome">
+    <p>Your time is precious, &amp; many things are worthy of your attention. Thank you for spending some of yours on my site.</p>
   </header>
 
   <main class="wrap">
@@ -39,6 +39,32 @@
     </div>
   </main>
 
-  <footer class="wrap">Ready Up n Roll</footer>
+  <!-- On wide screens this sits beside the page, fully open. On smaller ones it's a
+       small card in the corner that opens when you click or tap it. -->
+  <aside class="whatis" aria-labelledby="whatis-title">
+    <h2 id="whatis-title">What's a WhiteSpace?</h2>
+    <button class="whatis-toggle" type="button" aria-expanded="false" aria-controls="whatis-body">
+      <span class="say-click">Click</span><span class="say-tap">Tap</span> here to find out!
+    </button>
+    <div class="whatis-body" id="whatis-body">
+      <p>A WhiteSpace is a virtual world for you and your friends to roleplay in! It's got proximity chat, and works across any device with a browser connection (I think. It's supposed to, anyway. I'm still working on it.) It's self-hosted, meaning one of you runs the server on your computer. You can upload &amp; use your own custom images &amp; 3D models, or just use your imagination!</p>
+      <button class="whatis-close" type="button">Got it</button>
+    </div>
+  </aside>
+  <script>
+    (function () {
+      var box = document.querySelector(".whatis");
+      var toggle = box.querySelector(".whatis-toggle");
+      function set(open) {
+        box.classList.toggle("open", open);
+        toggle.setAttribute("aria-expanded", open);
+      }
+      toggle.addEventListener("click", function () { set(true); });
+      box.querySelector(".whatis-close").addEventListener("click", function () { set(false); toggle.focus(); });
+      document.addEventListener("keydown", function (e) { if (e.key === "Escape") set(false); });
+    })();
+  </script>
+
+  <footer class="wrap credits-line">Made with love by Drack from Brain Vacation Studios, by standing on the shoulders of giants - both of incredible humans, as well as the tools, art, machines, &amp; AIs born of their work. I can't name everyone I owe, but I tried anyway in <a href="credits.html">this credits page</a>.</footer>
 </body>
 </html>
