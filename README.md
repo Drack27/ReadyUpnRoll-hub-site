@@ -16,7 +16,7 @@ Plain HTML and CSS. No build step, nothing to install.
 Double-click `index.html`. It opens in your browser.
 
 ## Before launch
-- `host.html` has a download button pointing at `WhiteSpace-Host.exe`, which doesn't exist yet. Search for `DOWNLOAD LINK` and change the address once the host app is built.
+- `host.html`'s download button asks GitHub for the newest release in `Drack27/WhiteSpace-Host` and links to its .exe (named after its version, e.g. `WhiteSpace-Host-v1.1.87.exe`). If GitHub can't be reached it opens that release's page instead. Search for `DOWNLOAD LINK`.
 
 ## Hosting
 Served free by Cloudflare. readyupandroll.com forwards to readyupnroll.com (set up in Cloudflare, not in this code).
